@@ -1,0 +1,19 @@
+[package]
+name = "stm32f334"
+version = "0.1.0"
+description = "Peripheral access API for STM32F334 microcontrollers"
+authors = ["Roy Smeding <roy.smeding@gmail.com>"]
+keywords = ["no-std", "arm", "cortex-m", "stm32"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+bare-metal = "0.1.1"
+cortex-m = "0.4.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.3.0"
+
+[features]
+rt = ["cortex-m-rt"]
